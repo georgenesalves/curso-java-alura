@@ -19,7 +19,7 @@ public class TestaGerente {
 		
 		
 		System.out.println(autorizado);
-		System.out.println(g1.getBonificacao());
+//		System.out.println(g1.getBonificacao());
 		
 
 	}

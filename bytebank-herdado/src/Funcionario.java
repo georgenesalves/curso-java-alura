@@ -6,6 +6,7 @@ public class Funcionario {
 	
 	
 	public double getBonificacao() {
+		System.out.println("Chamando gratificação do funcionário.");
 		return this.salario*0.05;
 	}
 	public String getNome() {
