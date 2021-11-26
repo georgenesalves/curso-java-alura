@@ -5,6 +5,8 @@ public class ControleBonificacao {
 //	Na classe ControleBonificacao eu tenho os métodos que registram as bonificações dos vários funcionários.
 //	Em cada classe é definido o tipo de bonificação de cada um. e nessa classe estou somando todas as bonificações para saber o total que vai ser pago.
 	
+//	O método funciona porque está usando uma referencia genérica que, no caso, é a classe mãe Funcionario. Está apontando para a classe mae. 
+	
 	
 	
 	public void registra(Funcionario f) {	

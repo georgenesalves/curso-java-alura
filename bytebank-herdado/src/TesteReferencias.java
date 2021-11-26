@@ -1,4 +1,3 @@
-import javax.management.MBeanRegistration;
 
 public class TesteReferencias {
 
@@ -6,7 +5,7 @@ public class TesteReferencias {
 		Gerente g1 = new Gerente(); // criando um objeto do tipo gerente. criando uma variável g1 que vai receber o novo gerente.
 //		A parte da esquerda é mais genérica e a parte da direita é específica.
 		g1.setNome("Antônio");
-		String nome = g1.getNome();
+//		String nome = g1.getNome();
 //		System.out.println(nome);
 		
 		
@@ -16,32 +15,36 @@ public class TesteReferencias {
 		
 		ControleBonificacao controle1 = new ControleBonificacao();
 		controle1.registra(g1);
-	
-		
-		
+		ControleDecimoTerceiro controle2 = new ControleDecimoTerceiro();		
+//		O objeto2 é do tipo controleDecimoTerceiro.
 		
 		
 //		boolean autenticou = g1.autentica(222);
 //		System.out.println(autenticou);
 		
-		Funcionario func1 = new Funcionario();
-		func1.setNome("Jorge");
-		func1.setSalario(2500.0);
-		controle1.registra(func1);
+//		Funcionario func1 = new Funcionario();
+//		func1.setNome("Jorge");
+//		func1.setSalario(2500.0);
+//		controle1.registra(func1);
+//		controle2.decimoTerceiro(func1);
+		
 		
 		
 		Jardineiro jard1 = new Jardineiro();
 		jard1.setNome("Severino");
 		jard1.setSalario(2000.0);
+		controle2.decimoTerceiro(jard1); //chama o método decimoTerceiro da classe ControleDecimoTerceiro.
 		
-		controle1.registra(jard1);
-		
-		
-		
+		controle1.registra(jard1);  //chama o método registra da classe ControleBonificacao. 
+//		
+//		Designer d = new Designer();
+//		d.setSalario(3000.0);
+//		controle1.registra(d);
+//		controle2.decimoTerceiro(d);		
 		
 		
 		System.out.println(controle1.getSoma());
-		System.out.println();
+		System.out.println(controle2.getSomatorio());
 		
 	
 

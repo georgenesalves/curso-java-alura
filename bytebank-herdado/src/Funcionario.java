@@ -9,6 +9,12 @@ public class Funcionario {
 		System.out.println("Chamando gratificação do funcionário.");
 		return this.salario*0.05;
 	}
+	
+	public double getDecimoTerceiro() {
+		System.out.println("Chamando decimoTerceiro do funcionário.");
+		return this.salario*0.12;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
