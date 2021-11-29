@@ -2,7 +2,7 @@
 public class Jardineiro extends Funcionario {
 	
 	public double getBonificacao() {
-		return super.getBonificacao() + 100;		
+		return 100;		
 	}
 	
 	public double getDecimoTerceiro() {
