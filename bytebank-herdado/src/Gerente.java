@@ -7,15 +7,14 @@ public class Gerente extends Funcionario implements Autenticavel {
 	
 
 	public Gerente() {
-		this.autenticador = new LogicaAutenticacao();
-		
+		this.autenticador = new LogicaAutenticacao();				
 	}
 	
 
 
 	public double getBonificacao() {
 		System.out.println("Chamando a Bonificação do GERENTE.");
-		return super.getSalario();
+		return super.getSalario()*0.05 + super.getSalario();
 	}
 
 	@Override

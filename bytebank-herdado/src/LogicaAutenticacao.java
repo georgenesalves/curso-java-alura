@@ -1,13 +1,12 @@
 
 public class LogicaAutenticacao {
 	
-	private int senha = 2222;
+	private int senha;
 
 		public void setSenha(int senha) {
-		this.senha = senha;
-		
-		
+		this.senha = senha;		
 	}
+		
 
 	public boolean autentica(int senha) {
 		if (this.senha == senha) {

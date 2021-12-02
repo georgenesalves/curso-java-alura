@@ -1,7 +1,7 @@
 
 public class SistemaInterno {
 
-	private int senha = 2222;
+	private int senha = 5555;
 	
 	public void setSenha(int senha) {
 		this.senha = senha;

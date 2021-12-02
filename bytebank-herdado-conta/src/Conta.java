@@ -16,14 +16,7 @@ public abstract class Conta {
 	}
 	public abstract void deposita(double valor);
 
-	public boolean sacaValor(double valor) {
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
-			return true;
-		} else {
-			return false;
-		}
-	}
+	public abstract boolean sacaValor(double valor);
 
 	public boolean transfere(double valor, Conta destino){
 			if(this.sacaValor(valor)) {
@@ -38,4 +31,14 @@ public abstract class Conta {
 	public double getSaldo() {
 		return saldo;
 	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return titular;
+	}
+	
+
 }
